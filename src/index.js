@@ -36,21 +36,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
 
+    const updateButtonState = () => {
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex === slides.length - 1;
+    };
+
     const updateSlider = () => {
         const offset = currentIndex * -100;
         slider.style.transform = `translateX(${offset}%)`;
     };
 
-    const prevSlide = () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        updateSlider();
-    };
-
     const nextSlide = () => {
         currentIndex = (currentIndex + 1) % slides.length;
         updateSlider();
+        updateButtonState();
+    };
+
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+        updateButtonState();
     };
 
     prevButton.addEventListener("click", prevSlide);
     nextButton.addEventListener("click", nextSlide);
+
+    updateButtonState();
 });
