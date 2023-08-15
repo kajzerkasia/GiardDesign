@@ -6,11 +6,12 @@
     <meta name="description" content="Opis twojej strony">
     <title>GiardDesign</title>
     <link href="/dist/output.css" rel="stylesheet">
+    <link href="custom-styles.css" rel="stylesheet">
 </head>
 <body>
 <header>
-    <nav>
-        <div class="container mx-auto flex justify-between items-center">
+    <nav class="p-4 md:px-8 lg:px-12">
+        <div class="container mx-auto flex justify-between items-center py-6">
             <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
             <ul class="flex items-center space-x-11">
                 <li class="relative group">
@@ -23,8 +24,16 @@
                 <li><a href="#">O firmie</a></li>
                 <li><a href="#">Realizacje</a></li>
                 <li><a href="#">Kontakt</a></li>
-                <li><a href="#"><img src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania"></a></li>
+                <li><a href="#"><img id="toggleSearch" src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania"></a></li>
             </ul>
+            <div id="searchBox" class="hidden md:block absolute right-20 top-14 mt-2 p-2 w-60 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95">
+                <form>
+                    <label>
+                        <input type="text" placeholder="Wyszukaj..." class="border p-2 rounded-lg">
+                    </label>
+                    <button type="submit">Szukaj</button>
+                </form>
+            </div>
         </div>
     </nav>
 </header>
