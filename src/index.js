@@ -28,4 +28,29 @@ document.addEventListener('DOMContentLoaded', () => {
         dropdownContent.classList.toggle('scale-100');
         arrowDown.classList.toggle("active");
     });
+
+    const slider = document.querySelector(".slider");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
+
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+
+    const updateSlider = () => {
+        const offset = currentIndex * -100;
+        slider.style.transform = `translateX(${offset}%)`;
+    };
+
+    const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSlider();
+    };
+
+    const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSlider();
+    };
+
+    prevButton.addEventListener("click", prevSlide);
+    nextButton.addEventListener("click", nextSlide);
 });
