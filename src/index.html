@@ -8,16 +8,24 @@
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-<header class="flex items-center">
-    <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
+<header>
     <nav>
-        <ul class="flex items-center space-x-3.5">
-            <li><a href="#">Oferta<img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu"></a></li>
-            <li><a href="#">O firmie</a></li>
-            <li><a href="#">Realizacje</a></li>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#"><img src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania"></a></li>
-        </ul>
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
+            <ul class="flex items-center space-x-11">
+                <li class="relative group">
+                    <a href="#" class="flex items-center">
+                        Oferta
+                        <img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu" class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300">
+                    </a>
+                    <!-- rozwijane menu -->
+                </li>
+                <li><a href="#">O firmie</a></li>
+                <li><a href="#">Realizacje</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#"><img src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania"></a></li>
+            </ul>
+        </div>
     </nav>
 </header>
 <main>
