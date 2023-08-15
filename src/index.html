@@ -9,42 +9,61 @@
     <link href="custom-styles.css" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class="text-black text-sm">
     <nav class="p-4 md:px-8 lg:px-12">
-        <div class="container mx-auto flex justify-between items-center py-6">
+        <div class="container mx-auto flex justify-between items-center py-6 w-3/5">
             <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
             <ul class="flex items-center space-x-11">
-                <li class="relative group">
+                <li class="relative group hover:-translate-y-1 transition-transform">
                     <a href="#" class="dropdown-link flex items-center">
                         Oferta
-                        <img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu" class="ml-1 w-4 h-4 transform click-rotate-180">
+                        <img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu"
+                             class="ml-1 w-4 h-4 transform click-rotate-180">
                     </a>
-                    <div class="dropdown-content absolute hidden md:block shadow-md py-2 space-y-2 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95">
+                    <div class="dropdown-content z-10 absolute hidden md:block shadow-md py-2 space-y-2 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95 bg-white">
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projekty</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Wizualizacje</a>
                         <a href="#" class="block px-4 py-2 hover:bg-gray-100">Realizacje</a>
                     </div>
                 </li>
-                <li><a href="#">O firmie</a></li>
-                <li><a href="#">Realizacje</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#"><img id="toggleSearch" src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania"></a></li>
+                <li class="hover:-translate-y-1 transition-transform"><a href="#">O firmie</a></li>
+                <li class="hover:-translate-y-1 transition-transform"><a href="#">Realizacje</a></li>
+                <li class="hover:-translate-y-1 transition-transform"><a href="#">Kontakt</a></li>
+                <li class="relative group hover:-translate-y-1 transition-transform">
+                    <a href="#">
+                        <img id="toggleSearch" src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania">
+                    </a>
+                    <div id="searchBox"
+                         class="hidden md:block absolute mt-2 p-2 w-60 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95 right-0">
+                        <form>
+                            <div class="relative">
+                                <label>
+                                    <input type="text" placeholder="Wyszukaj..."
+                                           class="border p-2 pl-10 rounded-lg focus:outline-none focus:ring focus:border-blue-300 w-full">
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </li>
             </ul>
-            <div id="searchBox" class="hidden md:block absolute right-20 top-14 mt-2 p-2 w-60 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95">
-                <form>
-                    <label>
-                        <input type="text" placeholder="Wyszukaj..." class="border p-2 rounded-lg">
-                    </label>
-                    <button type="submit">Szukaj</button>
-                </form>
-            </div>
         </div>
     </nav>
 </header>
 <main>
-    <section>
-        <h2>O nas</h2>
-        <p>Tutaj znajdziesz informacje o naszej firmie lub projekcie.</p>
+    <section class="flex flex-wrap">
+        <div class="container mx-auto flex justify-between items-stretch">
+            <div class="w-full md:w-1/2 bg-beige flex flex-col">
+                <h1 class="text-4xl text-black">Nowoczesna aranżacja Twojego ogrodu</h1>
+                <p class="text-black">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                <div class="mt-auto">
+                    <button class="text-white bg-green py-2 px-4 md:mt-8">Skontaktuj się z nami</button>
+                    <button class="text-green bg-transparent py-2 px-4 md:mt-4">Zobacz nasze realizacje</button>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 md:sticky top-0 -z-50">
+                <img src="../assets/GardenPhoto.png" alt="">
+            </div>
+        </div>
     </section>
     <section>
         <h2>Usługi</h2>
