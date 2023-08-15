@@ -26,5 +26,14 @@
     transform: rotate(180deg);
 }
 
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
 
 
