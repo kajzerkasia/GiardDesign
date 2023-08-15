@@ -15,11 +15,15 @@
             <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
             <ul class="flex items-center space-x-11">
                 <li class="relative group">
-                    <a href="#" class="flex items-center">
+                    <a href="#" class="dropdown-link flex items-center">
                         Oferta
-                        <img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu" class="ml-1 w-4 h-4 transform group-hover:rotate-180 transition-transform duration-300">
+                        <img src="../assets/Icon.svg" alt="Strzałka w dół - rozwijane menu" class="ml-1 w-4 h-4 transform click-rotate-180">
                     </a>
-                    <!-- rozwijane menu -->
+                    <div class="dropdown-content absolute hidden md:block shadow-md py-2 space-y-2 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projekty</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Wizualizacje</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Realizacje</a>
+                    </div>
                 </li>
                 <li><a href="#">O firmie</a></li>
                 <li><a href="#">Realizacje</a></li>
