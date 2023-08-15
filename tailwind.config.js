@@ -10,6 +10,11 @@ module.exports = {
             'white': '#FFFFFF',
             'black': '#111111',
         },
+        fontFamily: {
+            'body': ['"Montserrat"'],
+            'p': ['"Inter"'],
+        }
+
     },
     plugins: [],
 }

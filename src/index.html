@@ -7,8 +7,10 @@
     <title>GiardDesign</title>
     <link href="/dist/output.css" rel="stylesheet">
     <link href="custom-styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-body">
 <header class="text-black text-sm">
     <nav class="p-4 md:px-8 lg:px-12">
         <div class="container mx-auto flex justify-between items-center py-6 w-3/5">
@@ -34,12 +36,12 @@
                         <img id="toggleSearch" src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania">
                     </a>
                     <div id="searchBox"
-                         class="hidden md:block absolute mt-2 p-2 w-60 shadow-lg rounded-lg transform transition duration-300 opacity-0 scale-95 right-0">
+                         class="hidden md:block absolute mt-2 p-2 w-60 rounded-lg transform transition duration-300 opacity-0 scale-95 right-0 bg-transparent">
                         <form>
                             <div class="relative">
                                 <label>
                                     <input type="text" placeholder="Wyszukaj..."
-                                           class="border p-2 pl-10 rounded-lg focus:outline-none focus:ring focus:border-blue-300 w-full">
+                                           class="border p-2 pl-10 rounded-lg focus:outline-none focus:ring focus:border-green w-full">
                                 </label>
                             </div>
                         </form>
@@ -50,14 +52,17 @@
     </nav>
 </header>
 <main>
-    <section class="flex flex-wrap">
+    <section class="flex flex-wrap gap-y-28">
         <div class="container mx-auto flex justify-between items-stretch">
-            <div class="w-full md:w-1/2 bg-beige flex flex-col">
-                <h1 class="text-4xl text-black">Nowoczesna aranżacja Twojego ogrodu</h1>
-                <p class="text-black">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-                <div class="mt-auto">
-                    <button class="text-white bg-green py-2 px-4 md:mt-8">Skontaktuj się z nami</button>
-                    <button class="text-green bg-transparent py-2 px-4 md:mt-4">Zobacz nasze realizacje</button>
+            <div class="w-full md:w-1/2 bg-beige flex flex-col justify-center items-center space-y-4">
+                <h1 class="text-6xl text-black font-medium mx-28 mb-11">Nowoczesna aranżacja Twojego ogrodu</h1>
+                <p class="text-black font-normal font-p leading-normal ml-28 mr-44">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług<br>z indywidualnym podejściem do każdego projektu.</p>
+                <div class="mt-auto flex items-center space-x-2 -ml-8">
+                    <button class="text-base rounded-3xl border border-green text-white bg-green pt-3 pb-3.5 px-6 font-p font-normal mr-8 mt-16">Skontaktuj się z nami</button>
+                    <button class="text-base rounded-3xl border border-green text-green bg-transparent pt-3 pb-3.5 px-6 flex items-center space-x-2 font-p font-normal mt-16">
+                        Zobacz nasze realizacje
+                        <img src="../assets/VectorIcon.svg" alt="" class="ml-2">
+                    </button>
                 </div>
             </div>
             <div class="w-full md:w-1/2 md:sticky top-0 -z-50">
