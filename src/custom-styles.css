@@ -35,5 +35,17 @@
     flex: 0 0 100%;
 }
 
+.arrow-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#sliderButtons {
+    position: absolute;
+    bottom: -20px;
+    right: 59px;
+    margin: 20px;
+}
+
 
 
