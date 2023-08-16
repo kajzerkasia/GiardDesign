@@ -54,8 +54,8 @@
     </nav>
 </header>
 <main>
-    <section class="flex flex-wrap justify-center gap-y-24">
-        <div class="container mx-auto w-full md:w-11/12 lg:w-10/12 xl:w-9/12 flex justify-between items-stretch">
+    <section class="flex flex-wrap justify-center gap-y-24 h-740">
+        <div class="container mx-auto w-full flex justify-between items-stretch">
             <div class="w-full relative overflow-hidden">
                 <div class="slider">
                     <!-- Slide 1 -->
@@ -131,9 +131,13 @@
                     <!-- More slides... -->
                 </div>
                 <!-- Przyciski nawigacji -->
-                <div class="flex justify-between items-center mt-4" id="sliderButtons">
-                    <button class="bg-gray-300 px-4 py-2 rounded-md" id="prevButton">Poprzedni</button>
-                    <button class="bg-gray-300 px-4 py-2 rounded-md" id="nextButton">Następny</button>
+                <div class="flex justify-between items-center mt-8" id="sliderButtons">
+                    <button id="prevButton" class="bg-white px-4 py-6">
+                        <img src="../assets/ArrowLeft.svg" alt="" class="arrow-icon w-8 h-8">
+                    </button>
+                    <button id="nextButton" class="bg-white px-4 py-6">
+                        <img src="../assets/ArrowRight.svg" alt="" class="arrow-icon w-8 h-8">
+                    </button>
                 </div>
             </div>
         </div>
