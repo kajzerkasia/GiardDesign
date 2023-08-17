@@ -59,5 +59,8 @@
     width: 760px;
 }
 
-/* @TODO: Slider - do poprawy - margines po prawej przy zmianie slajdów */
+.img-garden {
+    z-index: -50;
+}
+/* @TODO: Slider - do poprawy - margines po prawej przy zmianie slajdów, poprawić nawigację żeby była widoczna nad sliderem */
 
