@@ -43,9 +43,21 @@
 #sliderButtons {
     position: absolute;
     bottom: -20px;
-    right: 59px;
+    right: 12px;
     margin: 20px;
 }
 
+.site-width {
+    width: 1440px;
+}
 
+.smaller-width {
+    width: 1040px;
+}
+
+.text-width {
+    width: 760px;
+}
+
+/* @TODO: Slider - do poprawy - margines po prawej przy zmianie slajdów */
 

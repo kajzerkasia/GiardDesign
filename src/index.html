@@ -14,8 +14,8 @@
 </head>
 <body class="font-body">
 <header class="text-black text-sm">
-    <nav class="mx-8">
-        <div class="container mx-auto flex justify-between items-center py-6 w-4/6">
+    <nav class="mx-4 md:mx-8 lg:mx-16">
+        <div class="container mx-auto flex justify-between items-center py-6 md:w-4/6">
             <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
             <ul class="flex items-center space-x-11">
                 <li class="relative group hover:-translate-y-1 transition-transform">
@@ -53,17 +53,17 @@
         </div>
     </nav>
 </header>
-<main>
-    <section class="flex flex-wrap justify-center gap-y-24 h-740">
-        <div class="container mx-auto w-full flex justify-between items-stretch">
-            <div class="w-full relative overflow-hidden">
+<main class="flex justify-center">
+    <section class="flex justify-center items-center site-width">
+        <div class="container mx-auto w-full flex">
+            <div class="relative overflow-hidden">
                 <div class="slider">
                     <!-- Slide 1 -->
                     <div class="slide flex">
                         <!-- Lewa strona -->
-                        <div class="w-1/2 bg-beige flex flex-col justify-center items-center space-y-4 px-6 md:px-0">
+                        <div class="w-1/2 bg-beige flex flex-col justify-center items-center space-y-4">
                             <h1 class="text-6xl text-black font-medium mb-11 mx-24 leading-tight">Nowoczesna aranżacja
-                                Twojego ogrodu</h1>
+                                <br>Twojego ogrodu</h1>
                             <p class="text-black font-normal font-p leading-normal ml-24 mr-28">Marka GiardDesign to
                                 wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres
                                 usług<br>z indywidualnym podejściem do każdego projektu.</p>
@@ -78,7 +78,7 @@
                             </div>
                         </div>
                         <!-- Prawa strona (obrazek) -->
-                        <div class="w-1/2">
+                        <div class="w-1/2 img-garden">
                             <img src="../assets/GardenImage.png" alt="">
                         </div>
                     </div>
@@ -89,7 +89,10 @@
                             <div class="w-1/2 bg-beige flex flex-col justify-center items-center space-y-4 px-6 md:px-0">
                                 <h1 class="text-6xl text-black font-medium mb-11 mx-24 leading-tight">Nowoczesna
                                     wizualizacja Twojego ogrodu</h1>
-                                <p class="text-black font-normal font-p leading-normal ml-24 mr-36">W GiardDesign tworzymy niezwykłe przestrzenie,<br>które harmonijnie łączą naturę z nowoczesnym designem zapewniając wyjątkowe miejsce relaksu i inspiracji.</p>
+                                <p class="text-black font-normal font-p leading-normal ml-24 mr-36">W GiardDesign
+                                    tworzymy
+                                    niezwykłe przestrzenie,<br>które harmonijnie łączą naturę z nowoczesnym designem
+                                    zapewniając wyjątkowe miejsce relaksu i inspiracji.</p>
                                 <div class="mt-auto flex items-center space-x-2">
                                     <button class="text-base rounded-3xl border border-green text-white bg-green pt-3 pb-3.5 px-6 mt-16 font-p font-normal mr-8 -ml-4">
                                         Skontaktuj się z nami
@@ -112,7 +115,9 @@
                             <div class="w-1/2 bg-beige flex flex-col justify-center items-center space-y-4 px-6 md:px-0">
                                 <h1 class="text-6xl text-black font-medium mb-11 mx-24 leading-tight">Nowoczesna
                                     realizacja Twojego ogrodu</h1>
-                                <p class="text-black font-normal font-p leading-normal ml-24 mr-36">Tworzymy fascynujące miejsca, gdzie natura splata się z innowacyjnością. Razem wprowadzimy do Twojego otoczenia harmonię, funkcjonalność i estetykę, o jakiej marzysz.</p>
+                                <p class="text-black font-normal font-p leading-normal ml-24 mr-36">Tworzymy fascynujące
+                                    miejsca, gdzie natura splata się z innowacyjnością. Razem wprowadzimy do Twojego
+                                    otoczenia harmonię, funkcjonalność i estetykę, o jakiej marzysz.</p>
                                 <div class="mt-auto flex items-center space-x-2">
                                     <button class="text-base rounded-3xl border border-green text-white bg-green pt-3 pb-3.5 px-6 mt-16 font-p font-normal mr-8 -ml-4">
                                         Skontaktuj się z nami
@@ -132,26 +137,32 @@
                 </div>
                 <!-- Przyciski nawigacji -->
                 <div class="flex justify-between items-center mt-8" id="sliderButtons">
-                    <button id="prevButton" class="bg-white px-4 py-6">
+                    <button id="prevButton" class="bg-grey px-4 py-6">
                         <img src="../assets/ArrowLeft.svg" alt="" class="arrow-icon w-8 h-8">
                     </button>
-                    <button id="nextButton" class="bg-white px-4 py-6">
+                    <button id="nextButton" class="bg-grey px-4 py-6">
                         <img src="../assets/ArrowRight.svg" alt="" class="arrow-icon w-8 h-8">
                     </button>
                 </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>Usługi</h2>
-        <ul>
-            <li>Usługa 1</li>
-            <li>Usługa 2</li>
-            <li>Usługa 3</li>
-        </ul>
-    </section>
 </main>
-<footer>
+<main class="flex justify-center">
+<section class="flex flex-wrap justify-center bg-grey site-width">
+    <div class="flex flex-col items-start gap-16 smaller-width">
+        <header>
+            <p class="text-xs font-p font-normal mt-28 mb-4">Oferta</p>
+            <h2 class="font-body text-5xl font-medium mb-8">Działamy <span
+                    class="font-p italic font-medium">kompleksowo</span></h2>
+            <p class="text-width text-base text-p">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
+                rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+                posłużymy radą i wieloletnim doświadczeniem.</p>
+        </header>
+    </div>
+</section>
+</main>
+<footer class="mt-8 md:mt-16 lg:mt-24">
     <p>&copy; 2023 Twoja Firma. Wszelkie prawa zastrzeżone.</p>
 </footer>
 <script src="index.js"></script>
