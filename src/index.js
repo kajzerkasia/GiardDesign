@@ -62,4 +62,11 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.addEventListener("click", nextSlide);
 
     updateButtonState();
+
+    const masonryContainer = document.querySelector('#masonry-container');
+    const masonry = new Masonry(masonryContainer, {
+        itemSelector: '.item',
+        columnWidth: '.item',
+        gutter: 44
+    });
 });

@@ -62,6 +62,16 @@
 .img-garden {
     z-index: -50;
 }
-/* @TODO: sprawdzić nawigację żeby była widoczna nad sliderem, sekcja offer elementy mają być klikalne i mieć efekt hover, poprawić strzałki ze slidera, poprawić sekcę "O firmie", przenieść style z cutom-styles do tailwind.config, poprawić "Dowiedz się wiecej" - niżej
+
+#masonry-container {
+    max-width: 1440px;
+    margin: 0 auto; /* Wyśrodkowanie na stronie */
+}
+
+.item {
+    margin-bottom: 44px;
+}
+
+/* @TODO: sprawdzić nawigację żeby była widoczna nad sliderem, sekcja offer elementy mają być klikalne i mieć efekt hover, poprawić strzałki ze slidera, poprawić sekcę "O firmie", przenieść style z cutom-styles do tailwind.config, poprawić "Dowiedz się wiecej" - niżej, zrobić animacje wjeżdżania elementów przy scrollowaniu
  */
 
