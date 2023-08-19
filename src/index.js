@@ -86,12 +86,67 @@ document.addEventListener('DOMContentLoaded', () => {
             columnWidth: '.item',
             gutter: 44
         });
+        hiddenItemsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
-    collapseButton.addEventListener("click", function () {
+    collapseButton.addEventListener("click", () => {
         hiddenItemsContainer.style.display = "none";
         collapseButton.style.display = "none";
         expandButton.style.display = "flex";
         mainGradient.style.opacity = "1";
     });
+
+    const images = document.querySelectorAll(".item img");
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close-modal");
+    const modalBackground = document.getElementById("modal-background");
+    const prevModalButton = document.getElementById("prev-modal-button");
+    const nextModalButton = document.getElementById("next-modal-button");
+
+    let currentImageIndex = 0;
+
+    // Funkcja do aktualizowania źródła obrazu w modalu
+    function updateModalImage(index) {
+        modalImage.src = images[index].src;
+        currentImageIndex = index;
+    }
+
+    // Otwieranie popupa z klikniętego zdjęcia
+    images.forEach((image, index) => {
+        image.addEventListener("click", function () {
+            updateModalImage(index);
+            modal.classList.add("active");
+            modalBackground.style.display = "block";
+        });
+    });
+
+    function handleNavigation(direction) {
+        let newIndex = currentImageIndex + direction;
+
+        if (newIndex < 0) {
+            newIndex = images.length - 1;
+        } else if (newIndex >= images.length) {
+            newIndex = 0;
+        }
+
+        updateModalImage(newIndex);
+    }
+
+    prevModalButton.addEventListener("click", function () {
+        handleNavigation(-1);
+    });
+
+    nextModalButton.addEventListener("click", function () {
+        handleNavigation(1);
+    });
+
+    function closeModalAndBackground() {
+        modal.classList.remove("active");
+        modalBackground.style.display = "none";
+    }
+
+    closeModal.addEventListener("click", closeModalAndBackground);
+
+    modalBackground.addEventListener("click", closeModalAndBackground);
 });
