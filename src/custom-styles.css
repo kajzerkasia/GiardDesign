@@ -43,7 +43,7 @@
 #sliderButtons {
     position: absolute;
     bottom: -20px;
-    right: 12px;
+    right: -20px;
     margin: 20px;
 }
 
@@ -62,5 +62,6 @@
 .img-garden {
     z-index: -50;
 }
-/* @TODO: Slider - do poprawy - margines po prawej przy zmianie slajdów, sprawdzić nawigację żeby była widoczna nad sliderem, w sekcji offer zrobić działający mb-auto pod <p> font-p */
+/* @TODO: sprawdzić nawigację żeby była widoczna nad sliderem, sekcja offer elementy mają być klikalne i mieć efekt hover, poprawić strzałki ze slidera, poprawić sekcę "O firmie", przenieść style z cutom-styles do tailwind.config, poprawić "Dowiedz się wiecej" - niżej
+ */
 
