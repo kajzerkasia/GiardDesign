@@ -13,8 +13,18 @@ module.exports = {
         fontFamily: {
             'body': ['"Montserrat"'],
             'p': ['"Inter"'],
-        }
-
+        },
+        letterSpacing: {
+            'narrow': '-0.12px',
+            'narrower': '-0.16px',
+            'even_narrower': '-1.4px',
+            'narrowest': '-1.44px'
+        },
+        lineHeight: {
+            'loose': '115%',
+            'looser': '70px',
+            'even_looser': '150%',
+        },
     },
     plugins: [],
 }
