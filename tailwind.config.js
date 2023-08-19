@@ -18,11 +18,13 @@ module.exports = {
             'narrow': '-0.12px',
             'narrower': '-0.16px',
             'even_narrower': '-1.4px',
-            'narrowest': '-1.44px'
+            'narrowest': '-1.44px',
+            'really_narrowest': '-2px',
         },
         lineHeight: {
             'loose': '115%',
             'looser': '70px',
+            'looser_more': '120%',
             'even_looser': '150%',
         },
     },
