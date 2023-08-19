@@ -63,13 +63,14 @@
     z-index: -50;
 }
 
-#masonry-container {
+#masonry-container,
+.hidden-items-container {
     position: absolute;
     max-width: 1440px;
-    margin: 0 auto 44px;
+    margin: 0 auto;
 }
 
-#gradient-overlay {
+.gradient-overlay {
     position: relative;
     top: 475px;
     left: 0;
@@ -77,6 +78,19 @@
     height: 1000px;
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
     z-index: 1;
+}
+
+.second {
+    top: 550px;
+}
+
+#bottom-button,
+#bottom-button-second {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .item {
