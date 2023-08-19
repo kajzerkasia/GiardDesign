@@ -63,10 +63,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateButtonState();
 
-    const masonryContainer = document.querySelector('#masonry-container');
+    const masonryContainer = document.getElementById("masonry-container");
     const masonry = new Masonry(masonryContainer, {
         itemSelector: '.item',
         columnWidth: '.item',
         gutter: 44
+    });
+
+    const expandButton = document.getElementById("expand-button");
+    const mainGradient = document.getElementById("main-gradient");
+    const hiddenItemsContainer = document.querySelector(".hidden-items-container");
+    const collapseButton = document.getElementById("collapse-button");
+
+    expandButton.addEventListener("click", () => {
+        mainGradient.style.opacity = "0";
+        expandButton.style.display = "none";
+        hiddenItemsContainer.style.display = "block";
+        collapseButton.style.display = "flex";
+
+        const masonryContainerExpanded = new Masonry(hiddenItemsContainer, {
+            itemSelector: '.item',
+            columnWidth: '.item',
+            gutter: 44
+        });
+    });
+
+    collapseButton.addEventListener("click", function () {
+        hiddenItemsContainer.style.display = "none";
+        collapseButton.style.display = "none";
+        expandButton.style.display = "flex";
+        mainGradient.style.opacity = "1";
     });
 });
