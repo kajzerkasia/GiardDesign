@@ -82,7 +82,3 @@
 .item {
     margin-bottom: 42px;
 }
-
-/* @TODO: sprawdzić nawigację żeby była widoczna nad sliderem, sekcja offer elementy mają być klikalne i mieć efekt hover, poprawić strzałki ze slidera, poprawić sekcę "O firmie", przenieść style z cutom-styles do tailwind.config, poprawić "Dowiedz się wiecej" - niżej, zrobić animacje wjeżdżania elementów przy scrollowaniu
- */
-
