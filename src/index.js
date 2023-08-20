@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const masonry = new Masonry(masonryContainer, {
         itemSelector: '.item',
         columnWidth: '.item',
-        gutter: 44
+        gutter: 43
     });
 
     const expandButton = document.getElementById("expand-button");
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const masonryContainerExpanded = new Masonry(hiddenItemsContainer, {
             itemSelector: '.item',
             columnWidth: '.item',
-            gutter: 44
+            gutter: 43
         });
         hiddenItemsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
     });
