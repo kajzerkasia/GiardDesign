@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenItemsContainer = document.querySelector(".hidden-items-container");
     const collapseButton = document.getElementById("collapse-button");
 
+    const offset = 200;
+
     expandButton.addEventListener("click", () => {
         mainGradient.style.opacity = "0";
         expandButton.style.display = "none";
@@ -109,15 +111,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentImageIndex = 0;
 
-    // Funkcja do aktualizowania źródła obrazu w modalu
     function updateModalImage(index) {
         modalImage.src = images[index].src;
         currentImageIndex = index;
     }
 
-    // Otwieranie popupa z klikniętego zdjęcia
     images.forEach((image, index) => {
-        image.addEventListener("click", function () {
+        image.addEventListener("click", () => {
             updateModalImage(index);
             modal.classList.add("active");
             modalBackground.style.display = "block";
@@ -136,12 +136,24 @@ document.addEventListener('DOMContentLoaded', () => {
         updateModalImage(newIndex);
     }
 
-    prevModalButton.addEventListener("click", function () {
+    prevModalButton.addEventListener("click", () => {
         handleNavigation(-1);
     });
 
-    nextModalButton.addEventListener("click", function () {
+    nextModalButton.addEventListener("click", () => {
         handleNavigation(1);
+    });
+
+    document.addEventListener("keydown", event => {
+        if (modal.classList.contains("active")) {
+            if (event.key === "ArrowLeft") {
+                handleNavigation(-1);
+            } else if (event.key === "ArrowRight") {
+                handleNavigation(1);
+            } else if (event.key === "Escape") {
+                closeModalAndBackground();
+            }
+        }
     });
 
     function closeModalAndBackground() {
@@ -154,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     modalBackground.addEventListener("click", closeModalAndBackground);
 
     const animatedSections = document.querySelectorAll('.animated-section');
+    const animateBounceIndSections = document.querySelectorAll('.animated-bounce-in-section');
 
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -167,6 +180,10 @@ document.addEventListener('DOMContentLoaded', () => {
     animatedSections.forEach(section => {
         observer.observe(section);
     });
+
+    animateBounceIndSections.forEach(section => {
+        observer.observe(section);
+    })
 
     const searchInput = searchBox.querySelector("input");
     const searchResults = document.getElementById("searchResults");
