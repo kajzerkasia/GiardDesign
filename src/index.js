@@ -1,4 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    const mobileMenuButton = document.getElementById("mobileMenuButton");
+    const mobileMenuCollapseButton = document.getElementById("mobileMenuCollapseButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    mobileMenuButton.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenuCollapseButton.addEventListener("click", function() {
+        mobileMenu.classList.toggle("hidden");
+    });
+
     const toggleSearch = document.getElementById('toggleSearch');
     const searchBox = document.getElementById('searchBox');
 
@@ -226,4 +239,5 @@ document.addEventListener('DOMContentLoaded', () => {
             searchResults.style.display = "none";
         }
     });
+
 });

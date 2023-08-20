@@ -227,3 +227,19 @@
         transform: translateY(0);
     }
 }
+
+#mobileMenu {
+    z-index: 50;
+}
+
+@media (max-width: 767px) {
+    .text-black li {
+        font-size: 18px;
+        padding: 20px 0;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .text-black li:first-child {
+        border-top: none;
+    }
+}
