@@ -15,9 +15,20 @@
 <body class="font-body">
 <header class="text-black text-sm">
     <nav class="mx-4 md:mx-8 lg:mx-16">
-        <div class="container mx-auto flex justify-between items-center py-6 md:w-4/6">
-            <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign">
-            <ul class="flex items-center space-x-11 tracking-narrower">
+        <div class="container mx-auto flex justify-between items-center py-4 md:py-6 md:w-4/6">
+            <img src="../assets/giarddesign.svg" alt="Logo marki GiardDesign" class="w-20 md:w-32">
+            <!-- Hamburger Menu Mobile -->
+            <div class="md:hidden">
+                <button id="mobileMenuButton" class="text-black focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex items-center space-x-11 tracking-narrower">
                 <li class="relative group">
                     <a href="#" class="dropdown-link flex items-center z-50">
                         Oferta
@@ -37,6 +48,7 @@
                     <a href="#">
                         <img id="toggleSearch" src="../assets/LoupeIcon.svg" alt="Ikona lupki do wyszukiwania">
                     </a>
+                    <!-- Search Box -->
                     <div id="searchBox"
                          class="hidden md:block absolute mt-2 p-2 w-60 rounded-lg transform transition duration-300 opacity-0 scale-95 right-0 bg-transparent">
                         <form>
@@ -48,9 +60,36 @@
                             </div>
                         </form>
                     </div>
+                    <!-- Search Results -->
                     <div id="searchResults" class="hidden mt-2 p-2 w-60 rounded-lg bg-white shadow-md">
                         <!-- Tutaj będą pojawiać się wyniki wyszukiwania -->
                     </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Mobile Menu + Collapse Button -->
+        <div id="mobileMenu" class="hidden md:hidden absolute top-0 left-0 w-full bg-white">
+            <form class="px-6 py-4">
+                <div class="relative z-50 mb-4">
+                    <label>
+                        <input type="text" placeholder="Wyszukaj..."
+                               class="border p-2 pl-10 rounded-lg focus:outline-none w-full">
+                    </label>
+                </div>
+            </form>
+            <ul class="space-y-2 px-6 flex flex-col items-center">
+                <li><a href="#" class="block">Oferta</a></li>
+                <li><a href="#" class="block">O firmie</a></li>
+                <li><a href="#" class="block">Realizacje</a></li>
+                <li><a href="#" class="block">Kontakt</a></li>
+                <li>
+                    <button id="mobileMenuCollapseButton" class="text-black focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
                 </li>
             </ul>
         </div>
