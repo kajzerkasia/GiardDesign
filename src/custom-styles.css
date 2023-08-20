@@ -17,6 +17,19 @@
     }
 }
 
+.shake:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
 .click-rotate-180 {
     transition: transform 300ms;
     transform: rotate(0deg);
@@ -35,16 +48,10 @@
     flex: 0 0 100%;
 }
 
-.arrow-icon {
-    width: 24px;
-    height: 24px;
-}
-
 #sliderButtons {
     position: absolute;
-    bottom: -20px;
+    bottom: 0;
     right: -20px;
-    margin: 20px;
 }
 
 .site-width {
