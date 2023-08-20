@@ -8,13 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
         searchBox.classList.toggle('opacity-100');
         searchBox.classList.toggle('scale-100');
 
-        // Dodaj klasę "rotate" po kliknięciu w lupkę
         toggleSearch.classList.add('rotate');
 
-        // Usuń klasę "rotate" po zakończeniu animacji
         toggleSearch.addEventListener('animationend', () => {
             toggleSearch.classList.remove('rotate');
-        }, {once: true}); // { once: true } aby nasłuchiwanie wydarzenia zakończyło się po jednym wystąpieniu
+        }, {once: true});
     });
 
     const offerLink = document.querySelector(".dropdown-link");
@@ -86,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             columnWidth: '.item',
             gutter: 43
         });
-        hiddenItemsContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+        hiddenItemsContainer.scrollIntoView({behavior: "smooth", block: "start"});
     });
 
     collapseButton.addEventListener("click", () => {
@@ -94,6 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
         collapseButton.style.display = "none";
         expandButton.style.display = "flex";
         mainGradient.style.opacity = "1";
+
+        const lastItem = masonryContainer.lastElementChild;
+        if (lastItem) {
+            lastItem.scrollIntoView({behavior: "smooth", block: "end"});
+        }
     });
 
     const images = document.querySelectorAll(".item img");
@@ -149,4 +152,61 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModal.addEventListener("click", closeModalAndBackground);
 
     modalBackground.addEventListener("click", closeModalAndBackground);
+
+    const animatedSections = document.querySelectorAll('.animated-section');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.2});
+
+    animatedSections.forEach(section => {
+        observer.observe(section);
+    });
+
+    const searchInput = searchBox.querySelector("input");
+    const searchResults = document.getElementById("searchResults");
+
+    searchInput.addEventListener("input", () => {
+        const searchText = searchInput.value.toLowerCase();
+        const itemsToSearch = document.querySelectorAll(".item-to-search");
+
+        searchResults.innerHTML = "";
+
+        let matchingItems = [];
+
+        itemsToSearch.forEach(item => {
+            const itemText = item.textContent.toLowerCase();
+            if (itemText.includes(searchText)) {
+                matchingItems.push(item);
+
+                const resultItem = document.createElement("div");
+                resultItem.classList.add("result-item");
+                resultItem.textContent = itemText;
+
+                resultItem.addEventListener("click", () => {
+                    item.scrollIntoView({behavior: "smooth", block: "start"});
+                    searchResults.style.display = "none";
+                });
+
+                searchResults.appendChild(resultItem);
+            }
+        });
+
+        if (searchText.length > 0) {
+            searchResults.style.display = "block";
+        } else {
+            searchResults.style.display = "none";
+        }
+    });
+
+    searchInput.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            searchResults.style.display = "none";
+        }
+    });
 });
