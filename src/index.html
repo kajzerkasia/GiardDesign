@@ -13,6 +13,8 @@
           rel="stylesheet">
 </head>
 <body class="font-body">
+
+<!-- Navigation -->
 <header class="text-black text-sm">
     <nav class="mx-4 md:mx-8 lg:mx-16">
         <div class="container mx-auto flex justify-between items-center py-4 md:py-6 md:w-4/6">
@@ -95,8 +97,11 @@
         </div>
     </nav>
 </header>
+
+<!-- Intro Section -->
+<!-- Desktop Version - Slider -->
 <main class="flex justify-center animated-section">
-    <section class="flex justify-center items-center site-width">
+    <section class="desktop-version flex justify-center items-center site-width">
         <div class="container mx-auto w-full flex">
             <div class="relative overflow-hidden">
                 <div class="slider">
@@ -194,12 +199,60 @@
         </div>
     </section>
 </main>
-<div class="animated-section">
+
+<!-- Intro Section -->
+<!-- Mobile version - Slider -->
+<main>
+    <section class="mobile-version bg-beige">
+        <div class="mobile-slider">
+            <!-- Slide 1 -->
+            <div class="mobile-slide">
+                <h1 class="text-4xl text-black font-medium mb-4 leading-snug">Nowoczesna aranżacja Twojego ogrodu</h1>
+                <div class="img-garden mb-4">
+                    <img src="../assets/GardenImage.png" alt="">
+                </div>
+                <p class="text-black font-normal font-p leading-loose">Marka GiardDesign to wieloletnie doświadczenie i
+                    wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego
+                    projektu.</p>
+            </div>
+            <!-- Slide 2 -->
+            <div class="mobile-slide">
+                <h1 class="text-4xl text-black font-medium mb-4 leading-snug">Nowoczesna wizualizacja Twojego
+                    ogrodu</h1>
+                <div class="img-garden mb-4">
+                    <img src="../assets/GardenImage2.jpg" alt="">
+                </div>
+                <p class="text-black font-normal font-p leading-loose">W GiardDesign tworzymy niezwykłe przestrzenie,
+                    które harmonijnie łączą naturę z nowoczesnym designem zapewniając wyjątkowe miejsce relaksu i
+                    inspiracji.</p>
+            </div>
+            <!-- Slide 3 -->
+            <div class="mobile-slide">
+                <h1 class="text-4xl text-black font-medium mb-4 leading-snug">Nowoczesna realizacja Twojego ogrodu</h1>
+                <div class="img-garden mb-4">
+                    <img src="../assets/GardenImage3.jpg" alt="">
+                </div>
+                <p class="text-black font-normal font-p leading-loose">Tworzymy fascynujące miejsca, gdzie natura splata
+                    się z innowacyjnością. Razem wprowadzimy do Twojego otoczenia harmonię, funkcjonalność i estetykę, o
+                    jakiej marzysz.</p>
+            </div>
+            <!-- More slides... -->
+
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+    </section>
+</main>
+
+<!-- Offer Section -->
+<!-- Desktop Version -->
+<div class="animated-section desktop-version">
     <main class="flex justify-center">
         <section class="flex flex-wrap justify-center bg-grey site-width">
             <div class="flex flex-col items-start gap-16 smaller-width">
                 <header>
-                    <p class="text-xs font-p font-normal mt-28 mb-4 tracking-narrow leading-even_looser item-to-search">Oferta</p>
+                    <p class="text-xs font-p font-normal mt-28 mb-4 tracking-narrow leading-even_looser item-to-search">
+                        Oferta</p>
                     <h2 class="font-body text-5xl font-medium mb-8 tracking-narrowest leading-loose">Działamy <span
                             class="font-p italic font-medium">kompleksowo</span></h2>
                     <p class="text-width text-base font-p tracking-narrower leading-even_looser">Oferujemy kompletną
@@ -269,8 +322,76 @@
         </section>
     </main>
 </div>
+
+<!-- Offer Section -->
+<!-- Mobile Version -->
+<main class="mobile-version">
+    <section class="bg-grey site-width">
+        <div class="smaller-width">
+            <header class="px-4 pt-8 pb-4">
+                <p class="text-xs font-p font-normal mb-2 tracking-narrow leading-even_looser item-to-search">Oferta</p>
+                <h2 class="font-body text-3xl font-medium mb-2 tracking-narrowest leading-loose">Działamy <span
+                        class="font-p italic font-medium">kompleksowo</span></h2>
+                <p class="text-base font-p tracking-narrower leading-even_looser">
+                    Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe
+                    oraz rezydencjonalne.
+                    Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy
+                    radą i wieloletnim
+                    doświadczeniem.
+                </p>
+            </header>
+        </div>
+    </section>
+    <section class="pt-8 pb-12 bg-grey">
+        <div>
+            <div class="bg-white rounded shadow mx-4 rounded-3xl">
+                <article class="px-6 py-8">
+                    <img src="../assets/PencilIcon.png" alt="" class="w-8 h-8 shake cursor-pointer">
+                    <p class="text-xl font-body font-medium pt-6 pb-2 tracking-wide leading-loose cursor-pointer hover:text-green">
+                        Projekty</p>
+                    <p class="font-p text-sm mb-6 tracking-narrower leading-even_looser">Zaprojektujemy
+                        Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                    <button class="text-green flex items-center space-x-1 font-p text-sm border-b border-green pb-1 mt-4">
+                        Dowiedz się więcej
+                        <img src="../assets/MiniArrowIcon.svg" alt="" class="pl-2">
+                    </button>
+                </article>
+            </div>
+            <div class="bg-white rounded shadow mx-4 my-4 rounded-3xl">
+                <article class="px-6 py-8">
+                    <img src="../assets/EyeIcon.png" alt="" class="w-8 h-5 shake cursor-pointer">
+                    <p class="text-xl font-body font-medium pt-6 pb-2 tracking-wide leading-loose cursor-pointer hover:text-green">
+                        Wizualizacje</p>
+                    <p class="font-p text-sm mb-6 tracking-narrower leading-even_looser">Przedstawimy Ci projekty
+                        koncepcyjne<br>w postaci
+                        wirtualnego spaceru animowanego w technologii 3D.</p>
+                    <button class="text-green flex items-center space-x-1 font-p text-sm border-b border-green pb-1 mt-4">
+                        Dowiedz się więcej
+                        <img src="../assets/MiniArrowIcon.svg" alt="" class="pl-2">
+                    </button>
+                </article>
+            </div>
+            <div class="bg-white rounded shadow mx-4 rounded-3xl">
+                <article class="px-6 py-8">
+                    <img src="../assets/MagicIcon.png" alt="" class="w-7 h-7 -mb-1 shake cursor-pointer">
+                    <p class="text-xl font-body font-medium pt-6 pb-2 tracking-wide leading-loose cursor-pointer hover:text-green">
+                        Realizacje</p>
+                    <p class="font-p text-sm mb-6 tracking-narrowe leading-even_looser">Zrealizujemy Twoje marzenie przy
+                        użyciu najnowszych
+                        rozwiązań i zaawansowanych technologii.</p>
+                    <button class="text-green flex items-center space-x-1 font-p text-sm border-b border-green pb-1 mt-4">
+                        Zobacz nasze realizacje<img src="../assets/MiniArrowIcon.svg" alt="" class="pl-2">
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Company section -->
+<!-- Wersja desktopowa -->
 <main class="flex justify-center animated-section">
-    <section class="flex justify-center items-center site-width">
+    <section class="flex justify-center items-center site-width desktop-version">
         <div class="container mx-auto w-full flex">
             <div class="relative overflow-hidden">
                 <div>
@@ -308,19 +429,73 @@
         </div>
     </section>
 </main>
-<main class="flex justify-center">
-    <section class="flex flex-wrap justify-center bg-beige site-width">
-        <div class="flex flex-col items-start gap-16 smaller-width">
-            <header>
-                <p class="text-xs text-green font-p font-normal mt-[120px] mb-4 tracking-narrow leading-even_looser item-to-search">
-                    Realizacje</p>
-                <h2 class="font-body text-5xl font-medium mb-24 tracking-narrowest leading-loose">Nasze <span
-                        class="font-p italic font-medium">projekty</span></h2>
-            </header>
+
+<!-- Company section -->
+<!-- Wersja mobilna -->
+<main class="mobile-version">
+    <div class="w-full bg-green">
+        <img src="../assets/CompanySectionImage.png" alt="" class="w-full">
+    </div>
+    <div class="w-full bg-green text-center p-4">
+        <p class="text-xs font-p font-normal mb-2 text-grey tracking-narrow leading-even_looser item-to-search">
+            O firmie</p>
+        <h2 class="font-body text-2xl font-medium text-grey mb-2 tracking-wider leading-loose">
+            Tworzymy<br>z <span class="font-p italic font-medium">pasją</span></h2>
+        <p class="text-grey font-normal font-p leading-loose mx-2 tracking-narrower text-sm">
+            Każdy projekt to nowe
+            wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci,
+            których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
+            specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria
+            i
+            elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego
+            trybu
+            życia.</p>
+        <div class="mt-4">
+            <button class="text-sm rounded-3xl border border-grey text-grey bg-transparent py-2 px-4 flex items-center space-x-1 font-p font-normal">
+                Poznaj nas bliżej
+                <img src="../assets/ArrowRightIconWhite.svg" alt="" class="ml-1">
+            </button>
         </div>
-    </section>
+    </div>
 </main>
-<main>
+
+<!--Realizations section-->
+<!--Dektop verion-->
+<div class="desktop-version">
+    <main class="flex justify-center">
+        <section class="flex flex-wrap justify-center bg-beige site-width">
+            <div class="flex flex-col items-start gap-16 smaller-width">
+                <header>
+                    <p class="text-xs text-green font-p font-normal mt-[120px] mb-4 tracking-narrow leading-even_looser item-to-search">
+                        Realizacje</p>
+                    <h2 class="font-body text-5xl font-medium mb-24 tracking-narrowest leading-loose">Nasze <span
+                            class="font-p italic font-medium">projekty</span></h2>
+                </header>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!--Realizations section-->
+<!--Mobile version-->
+<div class="mobile-version">
+    <main class="flex justify-center">
+        <section class="bg-beige site-width p-4">
+            <div class="flex flex-col items-center gap-8">
+                <header class="text-center">
+                    <p class="text-xs text-green font-p font-normal mt-8 mb-2 tracking-wide leading-loose item-to-search">
+                        Realizacje</p>
+                    <h2 class="font-body text-3xl font-medium mb-8 tracking-wider leading-loose">Nasze <span
+                            class="font-p italic font-medium">projekty</span></h2>
+                </header>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!--Images section-->
+<!--Desktop version-->
+<main class="desktop-version">
     <section>
         <div id="masonry-container" class="bg-beige">
             <div id="main-gradient" class="gradient-overlay"></div>
@@ -364,6 +539,27 @@
         </div>
     </section>
 </main>
+
+<!--Images section-->
+<!--Mobile version-->
+<main class="mobile-version">
+    <section>
+        <div class="bg-beige p-4">
+            <div class="item"><img src="../assets/Realizations1.png" alt=""></div>
+            <div class="item"><img src="../assets/Realizations2.png" alt=""></div>
+            <div class="item"><img src="../assets/Realizations3.png" alt=""></div>
+            <div class="mt-4 mx-auto text-center">
+                <button id="open-modal-button"
+                class="text-sm rounded-3xl border border-black text-black bg-transparent py-2 px-4 mt-6 flex items-center space-x-1 font-p font-normal">
+                Otwórz galerię
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--Modal - only desktop -->
 <div class="modal-background" id="modal-background"></div>
 <div id="image-modal" class="modal">
     <span class="close" id="close-modal">&times;</span>
@@ -373,6 +569,10 @@
         <img id="modal-image" src="" alt="">
     </div>
 </div>
+
+<!--Instagram section-->
+<!--Desktop version-->
+<div class="desktop-version">
 <main class="flex justify-center animated-bounce-in-section">
     <section class="flex flex-wrap justify-center site-width bg-grey">
         <div class="py-[60px] smaller-width bg-grey">
@@ -394,6 +594,36 @@
         </div>
     </section>
 </main>
+</div>
+
+<!--Instagram section-->
+<!--Mobile version-->
+<div class="mobile-version">
+    <main class="mobile-version">
+        <section>
+            <div class="bg-grey py-8">
+                <div class="bg-green py-16 px-4 flex flex-col items-center">
+                    <h2 class="font-body text-grey text-xl font-medium tracking-tighter leading-loose mt-8 text-center">
+                        Zostańmy w kontakcie! Znajdziesz nas na <span class="font-p italic font-medium">Instagramie.</span>
+                    </h2>
+                    <div class="flex-grow"></div>
+                    <div class="mt-4 text-center">
+                        <p class="text-grey font-normal font-p leading-relaxed tracking-normal text-sm">
+                            Śledź nasze najnowsze realizacje!
+                        </p>
+                        <button class="text-sm rounded-3xl border border-grey text-green bg-grey py-2 px-4 mt-4 font-p font-normal">
+                            Instagram
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!--Footer-->
+<!--Desktop version-->
+<div class="desktop-version">
 <footer class="flex justify-center">
     <div class="flex justify-center site-width bg-black pt-[80px]">
         <section class="flex justify-between items-center smaller-width">
@@ -411,6 +641,9 @@
         </section>
     </div>
 </footer>
+</div>
+
+<div class="desktop-version">
 <footer class="flex justify-center">
     <div class="flex justify-center site-width bg-black py-[62px]">
         <section class=" smaller-width">
@@ -418,6 +651,9 @@
         </section>
     </div>
 </footer>
+</div>
+
+<div class="desktop-version">
 <footer class="flex justify-center">
     <div class="flex justify-center site-width bg-black pb-[120px]">
         <section class="flex justify-between items-center smaller-width">
@@ -434,6 +670,9 @@
         </section>
     </div>
 </footer>
+</div>
+
+<div class="desktop-version">
 <footer class="flex justify-center">
     <div class="flex justify-center site-width bg-black pb-[80px]">
         <section class="flex justify-between items-center smaller-width">
@@ -451,6 +690,63 @@
         </section>
     </div>
 </footer>
+</div>
+
+<!--Footer-->
+<!--Mobile version-->
+<footer class="mobile-version">
+    <div class="flex justify-center bg-black pt-4">
+        <section class="smaller-width">
+            <div class="flex items-center">
+                <p class="text-white font-normal font-p leading-relaxed tracking-normal text-sm ml-4">
+                    Daj znać, co możemy dla Ciebie zrobić!
+                </p>
+                <button class="text-sm rounded-3xl border border-green text-white bg-green py-2 px-4 font-p font-normal mr-4">
+                    Skontaktuj się z nami
+                </button>
+            </div>
+        </section>
+    </div>
+</footer>
+<footer class="mobile-version">
+    <div class="flex justify-center bg-black py-3">
+        <section class="smaller-width">
+            <div class="flex justify-center border border-grey"></div>
+        </section>
+    </div>
+</footer>
+<footer class="mobile-version">
+    <div class="flex justify-center bg-black pb-4">
+        <section class="smaller-width">
+            <div class="flex justify-center items-center">
+                <ul class="flex flex-col text-white font-normal font-p leading-relaxed tracking-normal text-sm mr-20">
+                    <li class="mb-2 cursor-pointer item-to-search">Kontakt</li>
+                    <li class="mb-2 cursor-pointer item-to-search">Instagram</li>
+                    <li class="mb-2 cursor-pointer item-to-search">Facebook</li>
+                    <li class="cursor-pointer item-to-search">LinkedIn</li>
+                </ul>
+                <ul class="flex flex-col text-white font-normal font-p leading-relaxed tracking-normal text-sm ml-6">
+                    <li class="mb-2">000-000-000</li>
+                    <li class="cursor-pointer item-to-search">giarddesign@kontakt.pl</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</footer>
+<footer class="mobile-version">
+    <div class="flex justify-center bg-black pb-4">
+        <section class="smaller-width">
+            <div class="flex justify-center items-center">
+                <p class="text-white font-normal font-p leading-relaxed tracking-normal text-sm ml-4">
+                    Prawa zastrzeżone © 2022
+                </p>
+                <img src="../assets/logo-full-light.svg" alt="" class="mr-4 ml-2">
+            </div>
+        </section>
+    </div>
+</footer>
+
+
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="index.js"></script>
 </body>
