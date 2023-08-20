@@ -175,3 +175,26 @@
     color: #1B5B31;
 }
 
+.animated-section {
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animated-section.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#searchBox {
+    z-index: 50;
+}
+
+#searchResults {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
