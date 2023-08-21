@@ -266,6 +266,43 @@
     }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .container {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+
+    .site-width {
+        max-width: 90%;
+    }
+
+    .desktop-version .slide {
+        flex-direction: column;
+    }
+
+    .slide {
+        flex-direction: column;
+    }
+
+    .tablet-paddings {
+        padding: 2rem 1rem;
+    }
+
+    .tablet-left {
+        width: 100%;
+    }
+
+    .tablet-image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
 .center-mobile-content {
     display: flex;
     flex-direction: column;
