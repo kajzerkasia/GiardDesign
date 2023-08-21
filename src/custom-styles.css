@@ -367,8 +367,8 @@
 
     .tablet-center-heading,
     .tablet-center-text {
-        text-align: center;
-        width: 50%;
+        text-align: left;
+        width: 80%;
     }
 
     .tablet-masonry-container {
@@ -390,6 +390,17 @@
     .tablet-footer-padding {
         padding-left: 1rem;
         padding-right: 1rem;
+    }
+
+    .offer-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tablet-img {
+        float: left;
     }
 }
 
