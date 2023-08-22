@@ -1,14 +1,16 @@
+import './styles.css';
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const mobileMenuButton = document.getElementById("mobileMenuButton");
     const mobileMenuCollapseButton = document.getElementById("mobileMenuCollapseButton");
     const mobileMenu = document.getElementById("mobileMenu");
 
-    mobileMenuButton.addEventListener("click", function () {
+    mobileMenuButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
     });
 
-    mobileMenuCollapseButton.addEventListener("click", function () {
+    mobileMenuCollapseButton.addEventListener("click", () => {
         mobileMenu.classList.toggle("hidden");
     });
 
