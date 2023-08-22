@@ -8,7 +8,7 @@ https://kajzerkasia.github.io/GiardDesign/
 
 ### Skoncentrowałam się na widoku desktopowym aby strona jak najbardziej przypominała projekt z Figmy. Stworzyłam style dla tabletu i mobile, jednak wymagają one jeszcze dopracowania.
 
-###### Próby otworzenia wersji na tablet/mobile generują czasami błędy w konsoli i zły widok, pomaga odświeżenie strony, wyjście z narzędzi developerskich i ponowne wejście w narzędzia developerskie.
+###### Próby otworzenia wersji na tablet/mobile generują czasami błędy w konsoli i zły widok - pomaga odświeżenie strony, wyjście z narzędzi developerskich i ponowne wejście w narzędzia developerskie.
 
 ### Zastosowane technologie
 
