@@ -2,9 +2,9 @@
 
 ### Projekt strony internetowej marki GiardDesign, który stworzyłam w procesie rekrutacyjnym dla agencji adRespect.pl
 
+### Skoncentrowałam się na widoku desktopowym aby strona jak najbardziej przypominała projekt z Figmy. Stworzyłam style dla tabletu i mobile, jednak wymagają one jeszcze dopracowania.
+
 ### Demo:
-
-
 
 ### Zastosowane technologie
 
