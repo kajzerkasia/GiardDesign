@@ -1,3 +1,6 @@
+import './input.css';
+import './custom-styles.css';
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const mobileMenuButton = document.getElementById("mobileMenuButton");
