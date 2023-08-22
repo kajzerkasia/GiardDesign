@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 .rotate {
     animation: rotate 0.5s ease-in-out;
 }
@@ -468,5 +465,8 @@
 .mobile-slider .next:hover {
     background-color: rgba(255, 255, 255, 1);
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*# sourceMappingURL=main.css.map*/
