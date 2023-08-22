@@ -1,5 +1,4 @@
-import './input.css';
-import './custom-styles.css';
+import './styles.css';
 
 document.addEventListener('DOMContentLoaded', () => {
 

@@ -29,54 +29,12 @@ module.exports = {
                     },
                     {
                         loader: "postcss-loader",
-                        options: {
-                            postcssOptions: {
-                                plugins: [
-                                    [
-                                        "autoprefixer",
-                                    ],
-                                ],
-                            },
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.s[ac]ss$/i,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                        }
-                    },
-                    {
-                        loader: 'css-loader',
-                        options : {
-                        }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            implementation: require('sass'), // Prefer `dart-sass`
-                        },
-                    },
-                    {
-                        loader: "postcss-loader",
-                        options: {
-                            postcssOptions: {
-                                plugins: [
-                                    [
-                                        "autoprefixer",
-                                    ],
-                                ],
-                            },
-                        },
                     },
                 ],
             },
             {
                 test: /\.(png|jpe?g|gif|webp|avif|svg)$/i,
-               type: 'asset/resource'
+                type: 'asset/resource'
             },
             {
                 test: /\.html$/i,
