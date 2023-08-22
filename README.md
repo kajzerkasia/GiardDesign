@@ -6,7 +6,7 @@ https://kajzerkasia.github.io/GiardDesign/
 
 ### Projekt strony internetowej marki GiardDesign, który stworzyłam w procesie rekrutacyjnym dla agencji adRespect.pl
 
-### Skoncentrowałam się na widoku desktopowym aby strona jak najbardziej przypominała projekt z Figmy. Stworzyłam style dla tabletu i mobile, jednak wymagają one jeszcze dopracowania.
+### Skoncentrowałam się na widoku desktopowym aby strona jak najbardziej przypominała projekt z Figmy. Stworzyłam też style na tablet i mobile, jednak wymagają one jeszcze dopracowania.
 
 ###### Próby otworzenia wersji na tablet/mobile generują czasami błędy w konsoli i zły widok - pomaga odświeżenie strony, wyjście z narzędzi developerskich i ponowne wejście w narzędzia developerskie.
 
