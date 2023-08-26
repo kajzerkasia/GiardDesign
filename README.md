@@ -10,6 +10,8 @@ https://kajzerkasia.github.io/GiardDesign/
 
 ###### Próby otworzenia wersji na tablet/mobile generują czasami błędy w konsoli i zły widok - pomaga odświeżenie strony, wyjście z narzędzi developerskich i ponowne wejście w narzędzia developerskie.
 
+###### Jest to mój pierwszy projekt z użyciem Tailwind CSS.
+
 ### Zastosowane technologie
 
 ![javascript](https://img.shields.io/badge/javascript%20-%23404d59.svg?logo=javascript&style=for-the-badge&logoColor=yellow)
